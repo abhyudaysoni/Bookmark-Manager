@@ -7,7 +7,6 @@ let tablinks = document.querySelectorAll(".tab-links");
 
 function openFeatures(evt, feature, buttonName) {
     //this loop removes the active class from all the unactive blocks
-
     let i;
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -26,6 +25,17 @@ function openFeatures(evt, feature, buttonName) {
     document.getElementById(feature).style.flexDirection = "column";
 }
 
-function openFAQs() {}
-
-const add = function () {};
+//selecting the faq buttons
+const ques = document.querySelectorAll(".questions");
+let i;
+for (i = 0; i < ques.length; i++) {
+    ques[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let ans = this.nextElementSibling;
+        if (ans.style.display === "block") {
+            ans.style.display = "none";
+        } else {
+            ans.style.display = "block";
+        }
+    });
+}
