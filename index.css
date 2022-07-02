@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section-description h3 {
+    margin: 2%;
+}
+.section-description p {
+    font-size: 1rem;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.intro button {
+    margin-bottom: 2%;
+    width: 200px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.intro button:hover {
+    border-color: #147cde;
+    color: white;
+    box-shadow: 1px 1px 20px #dbd9da;
+    background-color: #5368df;
+}
+.features-tab {
+    overflow: hidden;
+}
+.features-tab img {
+    height: auto;
+}
+.features-tab-btn-container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    font-size: 1rem;
+    width: 100%;
+}
+.features-tab button {
+    background-color: white;
+    border: none;
+    border-bottom: 3px solid black;
+    cursor: pointer;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+.features-tab button:hover {
+    font-weight: bolder;
+    border-bottom: 3px solid #ed8742;
+    text-shadow: 1px 1px 5px #dbd9da;
+}
+.features-tab button.active {
+    font-weight: bolder;
+    border-bottom: 3px solid #ed8742;
+    text-shadow: 1px 1px 5px #dbd9da;
+}
+#tab-division {
+    border: 1px solid black;
+}
+.feature-description {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.tab-content {
+    font-size: smaller;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tab-container {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.browser-extensions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #dbd9da;
+    height: 400px;
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.browser-logo {
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.browser-extensions h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.browser-extensions p {
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+.dotted {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.extension-btns {
+    width: 80%;
+    color: white;
+    background-color: #5368df;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.extension-btns:hover {
+    color: #5368df;
+    background-color: white;
+    border: 2px solid#147cde;
+    box-shadow: 1px 1px 10px;
+}
+.faqs {
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.qna {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-top: 1px solid #cfcfcf;
+}
+.questions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+}
+.questions p {
+    color: black;
+}
+.questions:hover {
+    filter: invert(50%);
+}
+.questions img:hover {
+    filter: invert(100%);
+}
+.answers {
+    display: none;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media screen and (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+    }
+    .section-description {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .download-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .browser-extensions {
+        width: 80%;
+        margin: 2%;
+    }
+    .tab-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-image img {
+        width: 100%;
+    }
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-tab {
+        overflow: hidden;
+    }
+    .sample-img {
+        width: 100%;
+        height: auto;
+    }
+    .qna {
+        width: 100%;
+    }
+}
