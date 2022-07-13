@@ -5,22 +5,19 @@ tabContent[0].style.flexDirection = "column";
 
 let tablinks = document.querySelectorAll(".tab-links");
 
-function openFeatures(evt, feature, buttonName) {
-    //this loop removes the active class from all the unactive blocks
+//changing the features tab when clicked
+function openFeatures(evt, feature) {
     let i;
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    //this sets the current tab to active
     evt.currentTarget.className += " active";
 
-    //this loop hides all the other tabs
     for (let i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
 
-    //this statement displays the reuired tab
     document.getElementById(feature).style.display = "flex";
     document.getElementById(feature).style.flexDirection = "column";
 }
